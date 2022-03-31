@@ -38,7 +38,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -b main -d build -r https://github.com/tajetaje/tajetaje.github.io.git"
   },
   "eslintConfig": {
     "extends": [
