@@ -1,10 +1,25 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"editor.formatOnSave": true
-	}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "firefox",
+        "request": "launch",
+        "name": "Debug in Firefox",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}/src",
+        "sourceMapPathOverrides": {
+          "webpack:///src/*": "${webRoot}/*"
+        }
+      }
+    ]
+  }
 }
